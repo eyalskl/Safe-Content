@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin Control Panel</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/main-admin.css" />
+		<script src="https://kit.fontawesome.com/f4b51a9e99.js" crossorigin="anonymous"></script>
+	</head>
+	<body onload="onInit()">
+		<h1>Welcome to the admin panel!</h1>
+		<a href="index.html">Return to Homepage!</a>
+
+		<button id="table" title="Table Display" class="table-mode mode" onclick="onSetDisplayMode(this.id)"><i class="fas fa-table"></i></button>
+		<button id="cards" title="Cards Display" class="cards-mode" onclick="onSetDisplayMode(this.id)"><i class="fas fa-id-card"></i></button>
+
+		<div class="users-cards"></div>
+		<table>
+			<thead hidden>
+				<tr>
+					<th>User Name</th>
+					<th>Password</th>
+					<th>Last Login Time</th>
+					<th>Admin</th>
+				</tr>
+			</thead>
+			<tbody class="users-table"></tbody>
+		</table>
+
+		<script src="js/util.js"></script>
+		<script src="js/storage.service.js"></script>
+		<script src="js/admin.service.js"></script>
+		<script src="js/admin-controller.js"></script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <div class="nav-bar hide">
+        <p>Welcome <span class="logged-user"></span></p>
+        <button onclick="onDoLogout()">Logout</button>
+    </div>
+    
+    <a class="admin-link hide" href="admin.html">Admin Control Panel</a>
+
+    <h1>Welcome</h1>
+    <p class='magic'></p>
+
+    <section class="login">
+    </section>
+
+    <script src="js/storage.service.js"></script>
+    <script src="js/user.service.js"></script>
+    <script src="js/user-controller.js"></script>
+</body>
+
+</html>
